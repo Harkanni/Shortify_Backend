@@ -10,8 +10,6 @@ app.use((req, res, next) => {
 	next()
 })
 
-app.use("/", (express.static("../Public")))
-
 const headers = {
   "Content-Type": "application/json",
   "apikey": "7dc99410f8d445c680b9f9d17b67024c",
@@ -23,8 +21,6 @@ async function shorten(url){
   let linkRequest = {
     destination: url,
     domain: { fullName: "rebrand.ly" }
-    //, slashtag: "A_NEW_SLASHTAG"
-    //, title: "Rebrandly YouTube channel"
 	}
   const apiCall = {
     method: 'post',
@@ -39,7 +35,9 @@ async function shorten(url){
 
 // let shortUrl = await shorten("https://www.youtube.com/channel/UCHK4HD0ltu1-I212icLPt3g");
 // console.log(shortUrl);
-
+app.get("/", (req, res) => {
+  res.json({"Hello": "World"})
+})
 
 app.get("/bitly", (req, res) => {
 	console.log("Request received")
