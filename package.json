@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tailwindcss -i ./Public/input.css -o ./Public/css/main.css",
-    "watch": "tailwindcss -i ./Public/input.css -o ./Public/css/main.css --watch && nodemon index.js"
-  },
+    "test": "echo \"Error: no test specified\" && exit 1"
+ },
   "keywords": [],
   "author": "",
   "license": "ISC",
