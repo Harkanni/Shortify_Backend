@@ -33,8 +33,6 @@ async function shorten(url){
   return link;
 }
 
-// let shortUrl = await shorten("https://www.youtube.com/channel/UCHK4HD0ltu1-I212icLPt3g");
-// console.log(shortUrl);
 app.get("/", (req, res) => {
   res.json({"Hello": "World"})
 })
