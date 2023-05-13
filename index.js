@@ -13,6 +13,7 @@ app.use((req, res, next) => {
 const headers = {
   "Content-Type": "application/json",
   "apikey": "7dc99410f8d445c680b9f9d17b67024c",
+  // "workspace": "YOUR_WORKSPACE_ID"
 }
 
 async function shorten(url){
